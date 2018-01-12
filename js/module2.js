@@ -34,7 +34,7 @@ fun(1, 2);
 const greet = `hello ${name}.
 how are you?`;
 
-alert(greet);
+console.log(greet);
 
 
 class Parent {

@@ -1,145 +1,17 @@
-const _ = require('lodash');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const people = [{
-    "id": 1,
-    "first_name": "Lavinie",
-    "last_name": "Ferrierio",
-    "email": "lferrierio0@cocolog-nifty.com",
-    "gender": "Female",
-    "ip_address": "5.89.74.14"
-}, {
-    "id": 2,
-    "first_name": "Jessa",
-    "last_name": "Borlease",
-    "email": "jborlease1@deviantart.com",
-    "gender": "Female",
-    "ip_address": "101.143.211.62"
-}, {
-    "id": 3,
-    "first_name": "Caldwell",
-    "last_name": "Delle",
-    "email": "cdelle2@newyorker.com",
-    "gender": "Male",
-    "ip_address": "204.137.72.201"
-}, {
-    "id": 4,
-    "first_name": "Humfried",
-    "last_name": "Bondy",
-    "email": "hbondy3@moonfruit.com",
-    "gender": "Male",
-    "ip_address": "91.54.185.68"
-}, {
-    "id": 5,
-    "first_name": "Ardene",
-    "last_name": "Bilyard",
-    "email": "abilyard4@google.com.au",
-    "gender": "Female",
-    "ip_address": "155.5.201.223"
-}, {
-    "id": 6,
-    "first_name": "Camel",
-    "last_name": "Matyushonok",
-    "email": "cmatyushonok5@prweb.com",
-    "gender": "Female",
-    "ip_address": "183.64.13.48"
-}, {
-    "id": 7,
-    "first_name": "Pablo",
-    "last_name": "Darrigone",
-    "email": "pdarrigone6@wsj.com",
-    "gender": "Male",
-    "ip_address": "201.200.219.10"
-}, {
-    "id": 8,
-    "first_name": "Jorgan",
-    "last_name": "Metzig",
-    "email": "jmetzig7@oracle.com",
-    "gender": "Male",
-    "ip_address": "240.83.75.126"
-}, {
-    "id": 9,
-    "first_name": "Rolfe",
-    "last_name": "Cowthart",
-    "email": "rcowthart8@rediff.com",
-    "gender": "Male",
-    "ip_address": "225.100.190.8"
-}, {
-    "id": 10,
-    "first_name": "Rob",
-    "last_name": "Terbruggen",
-    "email": "rterbruggen9@va.gov",
-    "gender": "Male",
-    "ip_address": "128.248.198.70"
-}, {
-    "id": 11,
-    "first_name": "Stoddard",
-    "last_name": "D'orsay",
-    "email": "sdorsaya@latimes.com",
-    "gender": "Female",
-    "ip_address": "235.250.191.223"
-}, {
-    "id": 12,
-    "first_name": "Jo ann",
-    "last_name": "Marre",
-    "email": "jmarreb@deliciousdays.com",
-    "gender": "Female",
-    "ip_address": "215.234.171.216"
-}, {
-    "id": 13,
-    "first_name": "Dominga",
-    "last_name": "Teggart",
-    "email": "dteggartc@ucla.edu",
-    "gender": "Female",
-    "ip_address": "252.93.128.38"
-}, {
-    "id": 14,
-    "first_name": "Darwin",
-    "last_name": "McQuode",
-    "email": "dmcquoded@cbslocal.com",
-    "gender": "Male",
-    "ip_address": "130.80.221.175"
-}, {
-    "id": 15,
-    "first_name": "Findley",
-    "last_name": "Belison",
-    "email": "fbelisone@craigslist.org",
-    "gender": "Male",
-    "ip_address": "163.6.210.227"
-}, {
-    "id": 16,
-    "first_name": "Haleigh",
-    "last_name": "Myles",
-    "email": "hmylesf@blogger.com",
-    "gender": "Male",
-    "ip_address": "211.139.76.31"
-}, {
-    "id": 17,
-    "first_name": "Simone",
-    "last_name": "Blondel",
-    "email": "sblondelg@seattletimes.com",
-    "gender": "Female",
-    "ip_address": "157.188.125.254"
-}, {
-    "id": 18,
-    "first_name": "Sandro",
-    "last_name": "Drane",
-    "email": "sdraneh@qq.com",
-    "gender": "Male",
-    "ip_address": "16.116.146.74"
-}, {
-    "id": 19,
-    "first_name": "Cammy",
-    "last_name": "Tarry",
-    "email": "ctarryi@usnews.com",
-    "gender": "Male",
-    "ip_address": "204.3.33.169"
-}, {
-    "id": 20,
-    "first_name": "Marcel",
-    "last_name": "Antonin",
-    "email": "mantoninj@cnet.com",
-    "gender": "Male",
-    "ip_address": "62.17.249.144"
-}];
+class Layout extends React.Component {
+    render () {
+        return (
+            <h1>it works!</h1>
+        );
+    }
+}
 
-alert(_.filter(people, { gender: 'Female'}).length);
+const app = document.getElementById('app');
+
+ReactDOM.render(<Layout />, app);
+
+
+// https://www.youtube.com/watch?v=MhkGQAoc7bc

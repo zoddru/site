@@ -18,9 +18,10 @@ module.exports = {
             }
         ]
     },
-    output: {
-        path: __dirname + '/docs/js',
-        filename: 'scripts.min.js'
+    output: {        
+        filename: 'scripts.min.js',
+        path: __dirname + '/docs/js/',
+        publicPath: '/js/'
     },
     plugins: debug ? [] : [
         new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
